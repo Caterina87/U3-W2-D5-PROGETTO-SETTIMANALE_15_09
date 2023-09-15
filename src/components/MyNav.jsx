@@ -1,6 +1,8 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 const MyNav = () => {
+  const location = useLocation();
   return (
     <Navbar expand="lg" className="bg-body-tertiary mb-5">
       <Container>
@@ -16,8 +18,9 @@ const MyNav = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto fs-3">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#details">Details</Nav.Link>
+            <Link className={`nav-link ${location.pathname === "/" && "active"}`} to="/">
+              Home
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

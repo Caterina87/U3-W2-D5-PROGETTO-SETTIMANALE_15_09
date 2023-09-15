@@ -1,17 +1,22 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import SearchForm from "./components/SearchForm";
-import Titles from "./components/Titles";
 import MyNav from "./components/MyNav";
 import MyFooter from "./components/MyFooter";
+import WeatherDetails from "./components/WeatherDetails";
+import MainSection from "./components/MainSection";
 
 function App() {
   return (
     <div className="App">
-      <MyNav />
-      <Titles />
-      <SearchForm />
-      <MyFooter />
+      <BrowserRouter>
+        <MyNav />
+        <Routes>
+          <Route path="/" element={<MainSection />} />
+          <Route path="WeatherDetails" element={<WeatherDetails />} />
+        </Routes>
+        <MyFooter />
+      </BrowserRouter>
     </div>
   );
 }

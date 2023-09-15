@@ -1,15 +1,7 @@
 const MyFooter = () => {
   return (
-    <footer className="bg-body-tertiary fixed-bottom mt-10 px-4">
-      <div className="d-flex mx-10">
-        <div className="icon fs-4 mb-3">
-          <i className="bi bi-facebook pe-3"></i>
-          <i className="bi bi-instagram pe-3"></i>
-          <i className="bi bi-twitter pe-3"></i>
-          <i className="bi bi-youtube pe-3"></i>
-        </div>
-      </div>
-      <div className="row d-flex flex-direction: column mx-10">
+    <footer className="bg-body-tertiary fixed-bottom mt-3 px-4">
+      <div className="row d-flex flex-direction: column mx-2">
         <div className="col-3">
           <ul className="list-unstyled">
             <li className="fs-6">Privacy</li>
