@@ -3,6 +3,7 @@ import "./App.css";
 import SearchForm from "./components/SearchForm";
 import Titles from "./components/Titles";
 import MyNav from "./components/MyNav";
+import MyFooter from "./components/MyFooter";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <MyNav />
       <Titles />
       <SearchForm />
+      <MyFooter />
     </div>
   );
 }
